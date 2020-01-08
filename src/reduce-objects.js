@@ -20,7 +20,6 @@ export const accounts = new Array(10).fill(null).map(() => ({
   name: v4(),
 }));
 
-
 export const reduce = () => accounts.reduce((obj, item) => {
     obj[item.id] = {
       name: item.name,
